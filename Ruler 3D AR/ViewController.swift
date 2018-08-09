@@ -26,7 +26,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     /*****/
 
     var center : CGPoint!
-    var points = [SCNNode]()
     
     let arrow = SCNScene(named: "art.scnassets/arrow.scn")!.rootNode
 
@@ -60,7 +59,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 
 
     var isFirstPoint = true
-//    var points = [SCNNode]()
+    var points = [SCNNode]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -142,6 +141,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.scene.rootNode.enumerateChildNodes{ (node, stop) in
             node.removeFromParentNode()
         }
+        
         
     }
     
