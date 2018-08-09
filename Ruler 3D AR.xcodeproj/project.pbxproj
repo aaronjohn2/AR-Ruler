@@ -8,29 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		3725539A211699E500EC3281 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 37255399211699E500EC3281 /* art.scnassets */; };
-		374723902116971B0097E560 /* RulerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3747238F2116971B0097E560 /* RulerViewController.swift */; };
+		374723902116971B0097E560 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3747238F2116971B0097E560 /* ViewController.swift */; };
 		37611CC321168A860064A667 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37611CC221168A860064A667 /* AppDelegate.swift */; };
-		37611CC521168A860064A667 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37611CC421168A860064A667 /* ViewController.swift */; };
 		37611CC821168A860064A667 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37611CC621168A860064A667 /* Main.storyboard */; };
 		37611CCA21168A890064A667 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37611CC921168A890064A667 /* Assets.xcassets */; };
 		37611CCD21168A890064A667 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37611CCB21168A890064A667 /* LaunchScreen.storyboard */; };
-		37CF0C542116A44300700B76 /* Utils in Resources */ = {isa = PBXBuildFile; fileRef = 37CF0C532116A44200700B76 /* Utils */; };
 		61DA9795F0EBDB1351927AB9 /* Pods_Ruler_3D_AR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62F172D2858D6063A44A8017 /* Pods_Ruler_3D_AR.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2B720461D5982C365DAE1920 /* Pods-Ruler 3D AR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ruler 3D AR.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ruler 3D AR/Pods-Ruler 3D AR.release.xcconfig"; sourceTree = "<group>"; };
 		37255399211699E500EC3281 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		3747238F2116971B0097E560 /* RulerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulerViewController.swift; sourceTree = "<group>"; };
+		3747238F2116971B0097E560 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		37611CBF21168A860064A667 /* Ruler 3D AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ruler 3D AR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37611CC221168A860064A667 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		37611CC421168A860064A667 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		37611CC721168A860064A667 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		37611CC921168A890064A667 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37611CCC21168A890064A667 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37611CCE21168A890064A667 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		37CF0C532116A44200700B76 /* Utils */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Utils; sourceTree = "<group>"; };
-		37CF0C552116A48200700B76 /* ARuler-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ARuler-Bridging-Header.h"; sourceTree = "<group>"; };
 		62F172D2858D6063A44A8017 /* Pods_Ruler_3D_AR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ruler_3D_AR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C3FD6EA99FE400D648406A9 /* Pods-Ruler 3D AR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ruler 3D AR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ruler 3D AR/Pods-Ruler 3D AR.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,11 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				37611CC221168A860064A667 /* AppDelegate.swift */,
-				37CF0C552116A48200700B76 /* ARuler-Bridging-Header.h */,
-				37611CC421168A860064A667 /* ViewController.swift */,
-				3747238F2116971B0097E560 /* RulerViewController.swift */,
+				3747238F2116971B0097E560 /* ViewController.swift */,
 				37611CC621168A860064A667 /* Main.storyboard */,
-				37CF0C532116A44200700B76 /* Utils */,
 				37611CC921168A890064A667 /* Assets.xcassets */,
 				37255399211699E500EC3281 /* art.scnassets */,
 				37611CCB21168A890064A667 /* LaunchScreen.storyboard */,
@@ -161,7 +153,6 @@
 			files = (
 				37611CCD21168A890064A667 /* LaunchScreen.storyboard in Resources */,
 				3725539A211699E500EC3281 /* art.scnassets in Resources */,
-				37CF0C542116A44300700B76 /* Utils in Resources */,
 				37611CCA21168A890064A667 /* Assets.xcassets in Resources */,
 				37611CC821168A860064A667 /* Main.storyboard in Resources */,
 			);
@@ -215,8 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				374723902116971B0097E560 /* RulerViewController.swift in Sources */,
-				37611CC521168A860064A667 /* ViewController.swift in Sources */,
+				374723902116971B0097E560 /* ViewController.swift in Sources */,
 				37611CC321168A860064A667 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
