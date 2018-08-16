@@ -19,16 +19,22 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     @IBOutlet var placeButton: UIButton!
     @IBOutlet var trashButton: UIButton!
     @IBOutlet var settingButton: UIButton!
-    @IBOutlet var resetButton: UIButton!
     @IBOutlet var sceneView: ARSCNView!
-
-
+    
+    var startNode: SCNNode!
+    var endNode: SCNNode!
+    var lineNode: SCNNode?
+    var textNode: SCNNode!
+    var textWrapNode: SCNNode!
+    
     /*****/
 
     var center : CGPoint!
     
     let arrow = SCNScene(named: "art.scnassets/arrow.scn")!.rootNode
 
+//    var cameraNode: SCNNode!
+//    var linesNode: SCNNode?
 
     var positions = [SCNVector3]()
 
@@ -41,8 +47,9 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         positions.append(position)
         let lastTenPositions = positions.suffix(10)
         arrow.position = getAveragePosition(from: lastTenPositions)
+        
     }
-
+    
     func getAveragePosition(from positions : ArraySlice<SCNVector3>) -> SCNVector3 {
         var averageX : Float = 0
         var averageY : Float = 0
@@ -101,11 +108,12 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             
             let d = distance(float3(pointA.position), float3(pointB.position))
             
-            // add line
-            let line = SCNGeometry.line(from: pointA.position, to: pointB.position)
-            print(d.description)
-            let lineNode = SCNNode(geometry: line)
-            sceneView.scene.rootNode.addChildNode(lineNode)
+//             add line
+                let line = SCNGeometry.lined(from: pointA.position, to: pointB.position)
+                print(d.description)
+                let lineNode = SCNNode(geometry: line)
+                sceneView.scene.rootNode.addChildNode(lineNode)
+            
             
             // add midPoint
             let midPoint = (float3(pointA.position) + float3(pointB.position)) / 2
@@ -131,25 +139,53 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             
             
             isFirstPoint = true
+            
+            
         }
         
         
     }
     
+    
     @IBAction func deleteAction(_ sender: UIButton) {
        
-        sceneView.scene.rootNode.enumerateChildNodes{ (node, stop) in
+        sceneView.scene.rootNode.enumerateChildNodes { (node, stop) in
             node.removeFromParentNode()
         }
         
-        
     }
+    
+    @IBAction func toggleTorch(_ sender: UIButton) {
+        
+        guard let device = AVCaptureDevice.default(for: AVMediaType.video)
+            else {return}
+        
+        if device.hasTorch {
+            do {
+                try device.lockForConfiguration()
+                
+                if device.torchMode == .on {
+                    device.torchMode = .off
+                } else {
+                    device.torchMode = .on
+                }
+                
+                device.unlockForConfiguration()
+            } catch {
+                print("Torch could not be used")
+            }
+        } else {
+            print("Torch is not available")
+        }
+    }
+    
     
     
 }
 
+
 extension SCNGeometry {
-    class func line(from vectorA : SCNVector3, to vectorB : SCNVector3) -> SCNGeometry {
+    class func lined(from vectorA : SCNVector3, to vectorB : SCNVector3) -> SCNGeometry {
         let indices : [Int32] = [0,1]
         let source = SCNGeometrySource(vertices: [vectorA, vectorB])
         let element = SCNGeometryElement(indices: indices, primitiveType: .line)

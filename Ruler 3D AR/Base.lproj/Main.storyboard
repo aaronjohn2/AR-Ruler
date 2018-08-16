@@ -91,36 +91,35 @@
                                     <action selector="deleteAction:" destination="TpB-2d-TTp" eventType="touchUpInside" id="hnJ-tQ-B3J"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZXI-Ro-BHe">
-                                <rect key="frame" x="47" y="592" width="40" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7A-Qg-SaP" userLabel="Torch Button">
+                                <rect key="frame" x="47" y="590" width="40" height="44"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="L4L-r2-Qye"/>
-                                    <constraint firstAttribute="height" constant="40" id="MsM-g3-2uV"/>
+                                    <constraint firstAttribute="width" constant="40" id="LFj-LR-SiM"/>
+                                    <constraint firstAttribute="height" constant="44" id="mXN-Ss-K89"/>
                                 </constraints>
-                                <state key="normal" image="restart"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7A-Qg-SaP">
-                                <rect key="frame" x="319" y="405" width="40" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="flashlight icon"/>
+                                <color key="tintColor" red="0.21442244599999999" green="0.39308170250000002" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" backgroundImage="flashlight icon"/>
+                                <connections>
+                                    <action selector="toggleTorch:" destination="TpB-2d-TTp" eventType="touchUpInside" id="wNG-tw-fWw"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="lM9-kX-7Iv" firstAttribute="centerX" secondItem="LDI-vj-GsT" secondAttribute="centerX" id="9rO-bE-5c4"/>
-                            <constraint firstItem="ZXI-Ro-BHe" firstAttribute="top" secondItem="TrI-ua-BO1" secondAttribute="top" id="Db8-cg-Jbk"/>
                             <constraint firstItem="lM9-kX-7Iv" firstAttribute="centerY" secondItem="Ewg-ne-GkB" secondAttribute="centerY" id="ENN-Eq-vgp"/>
                             <constraint firstItem="kfu-Be-Dxq" firstAttribute="bottom" secondItem="QOQ-wb-MOJ" secondAttribute="bottom" id="FH9-ol-QmD"/>
-                            <constraint firstItem="QOQ-wb-MOJ" firstAttribute="bottom" secondItem="ZXI-Ro-BHe" secondAttribute="bottom" constant="35" id="Gxo-RL-DKp"/>
                             <constraint firstItem="lM9-kX-7Iv" firstAttribute="centerY" secondItem="kfu-Be-Dxq" secondAttribute="centerY" id="IF2-mY-ZAM"/>
+                            <constraint firstItem="QOQ-wb-MOJ" firstAttribute="bottom" secondItem="k7A-Qg-SaP" secondAttribute="bottom" constant="33" id="MWi-Hx-ylp"/>
+                            <constraint firstItem="LDI-vj-GsT" firstAttribute="leading" secondItem="k7A-Qg-SaP" secondAttribute="trailing" constant="65" id="S1q-bh-iTe"/>
+                            <constraint firstItem="k7A-Qg-SaP" firstAttribute="centerY" secondItem="TrI-ua-BO1" secondAttribute="centerY" id="ViU-GK-EpL"/>
                             <constraint firstItem="kfu-Be-Dxq" firstAttribute="leading" secondItem="U8f-Fl-0nA" secondAttribute="leading" id="W9X-2M-uPQ"/>
                             <constraint firstItem="TrI-ua-BO1" firstAttribute="leading" secondItem="LDI-vj-GsT" secondAttribute="trailing" constant="67" id="XkA-Yg-LQN"/>
                             <constraint firstItem="lM9-kX-7Iv" firstAttribute="centerX" secondItem="kfu-Be-Dxq" secondAttribute="centerX" id="e6p-fK-RUx"/>
-                            <constraint firstItem="ZXI-Ro-BHe" firstAttribute="centerY" secondItem="LDI-vj-GsT" secondAttribute="centerY" id="irL-rB-WEH"/>
-                            <constraint firstItem="ZXI-Ro-BHe" firstAttribute="leading" secondItem="QOQ-wb-MOJ" secondAttribute="leading" constant="47" id="jb1-8m-Vwf"/>
                             <constraint firstItem="lM9-kX-7Iv" firstAttribute="centerX" secondItem="U8f-Fl-0nA" secondAttribute="centerX" id="kO0-16-vuW"/>
                             <constraint firstItem="kfu-Be-Dxq" firstAttribute="leading" secondItem="Ewg-ne-GkB" secondAttribute="leading" id="lOB-7v-gJZ"/>
-                            <constraint firstItem="LDI-vj-GsT" firstAttribute="leading" secondItem="ZXI-Ro-BHe" secondAttribute="trailing" constant="65" id="pet-M4-QP1"/>
+                            <constraint firstItem="k7A-Qg-SaP" firstAttribute="centerY" secondItem="LDI-vj-GsT" secondAttribute="centerY" id="rEW-Mj-1N4"/>
+                            <constraint firstItem="k7A-Qg-SaP" firstAttribute="leading" secondItem="QOQ-wb-MOJ" secondAttribute="leading" constant="47" id="tLn-1z-aB5"/>
                             <constraint firstItem="kfu-Be-Dxq" firstAttribute="top" secondItem="U8f-Fl-0nA" secondAttribute="top" id="wfj-lP-ZR3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="QOQ-wb-MOJ"/>
@@ -129,7 +128,6 @@
                         <outlet property="distanceLabel_Center" destination="H7L-4s-SaM" id="fbg-Z4-6XP"/>
                         <outlet property="indicator" destination="lM9-kX-7Iv" id="H3R-n8-vJa"/>
                         <outlet property="placeButton" destination="LDI-vj-GsT" id="cXh-IL-bJA"/>
-                        <outlet property="resetButton" destination="ZXI-Ro-BHe" id="PMs-98-dw9"/>
                         <outlet property="sceneView" destination="kfu-Be-Dxq" id="GJy-0n-qOY"/>
                         <outlet property="settingButton" destination="dUW-E9-nmR" id="BgA-cV-TY6"/>
                         <outlet property="trashButton" destination="TrI-ua-BO1" id="tBf-l4-H0B"/>
@@ -144,8 +142,7 @@
         <image name="SideViewIcon" width="40" height="37"/>
         <image name="Slice" width="80" height="80"/>
         <image name="add" width="48" height="48"/>
-        <image name="flashlight icon" width="256" height="256"/>
-        <image name="restart" width="60" height="60"/>
+        <image name="flashlight icon" width="128" height="128"/>
         <image name="set" width="48" height="48"/>
         <image name="setting" width="60" height="60"/>
         <image name="trash" width="60" height="60"/>
