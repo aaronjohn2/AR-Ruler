@@ -1,2 +1,2 @@
 # AR-Ruler
-Using ARKit in Swift to make an Augmented Reality Ruler which could calculate distance of real world objects.
+Made an Augmented Reality Ruler by implementing ARKit in Swift to calculate the distance of real world objects.
