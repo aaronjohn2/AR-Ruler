@@ -9,8 +9,6 @@
 import UIKit
 import ARKit
 import SceneKit
-import PKHUD
-import AwesomeIntroGuideView
 
 class ViewController: UIViewController, ARSCNViewDelegate {
     
@@ -18,7 +16,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     @IBOutlet var distanceLabel_Center: UILabel!
     @IBOutlet var placeButton: UIButton!
     @IBOutlet var trashButton: UIButton!
-    @IBOutlet var settingButton: UIButton!
     @IBOutlet var sceneView: ARSCNView!
     
     var startNode: SCNNode!
@@ -33,8 +30,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     
     let arrow = SCNScene(named: "art.scnassets/arrow.scn")!.rootNode
 
-//    var cameraNode: SCNNode!
-//    var linesNode: SCNNode?
 
     var positions = [SCNVector3]()
 

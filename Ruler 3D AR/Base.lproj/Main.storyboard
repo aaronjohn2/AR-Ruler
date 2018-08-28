@@ -33,20 +33,9 @@
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="40"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUW-E9-nmR">
-                                            <rect key="frame" x="315" y="27" width="40" height="40"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="40" id="op0-Tr-hZh"/>
-                                                <constraint firstAttribute="width" constant="40" id="pZJ-gd-RBG"/>
-                                            </constraints>
-                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <state key="normal" image="setting"/>
-                                        </button>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="dUW-E9-nmR" firstAttribute="centerY" secondItem="H7L-4s-SaM" secondAttribute="centerY" id="X0C-Rj-Idy"/>
                                         <constraint firstItem="H7L-4s-SaM" firstAttribute="baseline" secondItem="Quf-21-0o1" secondAttribute="centerY" constant="20" id="XIh-y4-zdk"/>
-                                        <constraint firstAttribute="trailing" secondItem="dUW-E9-nmR" secondAttribute="trailing" constant="20" id="iLW-bx-Oho"/>
                                         <constraint firstItem="H7L-4s-SaM" firstAttribute="centerX" secondItem="Quf-21-0o1" secondAttribute="centerX" id="irH-Nj-aQp"/>
                                     </constraints>
                                 </view>
@@ -124,13 +113,12 @@
                         <outlet property="indicator" destination="lM9-kX-7Iv" id="H3R-n8-vJa"/>
                         <outlet property="placeButton" destination="LDI-vj-GsT" id="cXh-IL-bJA"/>
                         <outlet property="sceneView" destination="kfu-Be-Dxq" id="GJy-0n-qOY"/>
-                        <outlet property="settingButton" destination="dUW-E9-nmR" id="BgA-cV-TY6"/>
                         <outlet property="trashButton" destination="TrI-ua-BO1" id="tBf-l4-H0B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FEw-Y1-DeS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-31.199999999999999" y="104.7976011994003"/>
+            <point key="canvasLocation" x="146" y="304"/>
         </scene>
     </scenes>
     <resources>
@@ -138,7 +126,6 @@
         <image name="add" width="48" height="48"/>
         <image name="flashlight icon" width="128" height="128"/>
         <image name="set" width="48" height="48"/>
-        <image name="setting" width="60" height="60"/>
         <image name="trash" width="60" height="60"/>
     </resources>
 </document>
