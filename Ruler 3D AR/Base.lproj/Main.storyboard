@@ -109,7 +109,6 @@
                         <viewLayoutGuide key="safeArea" id="QOQ-wb-MOJ"/>
                     </view>
                     <connections>
-                        <outlet property="distanceLabel_Center" destination="H7L-4s-SaM" id="fbg-Z4-6XP"/>
                         <outlet property="indicator" destination="lM9-kX-7Iv" id="H3R-n8-vJa"/>
                         <outlet property="placeButton" destination="LDI-vj-GsT" id="cXh-IL-bJA"/>
                         <outlet property="sceneView" destination="kfu-Be-Dxq" id="GJy-0n-qOY"/>

@@ -13,7 +13,6 @@ import SceneKit
 class ViewController: UIViewController, ARSCNViewDelegate {
     
     @IBOutlet var indicator: UIImageView!
-    @IBOutlet var distanceLabel_Center: UILabel!
     @IBOutlet var placeButton: UIButton!
     @IBOutlet var trashButton: UIButton!
     @IBOutlet var sceneView: ARSCNView!
