@@ -102,7 +102,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             
             let d = distance(float3(pointA.position), float3(pointB.position))
             
-//             add line
+            //add line
                 let line = SCNGeometry.lined(from: pointA.position, to: pointB.position)
                 print(d.description)
                 let lineNode = SCNNode(geometry: line)
