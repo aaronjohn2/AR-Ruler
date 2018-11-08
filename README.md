@@ -210,5 +210,4 @@ extension SCNGeometry {
 }
 ```
 
-
-You can get my [AR Ruler iOS app work](https://github.com/aaronjohn2/AR-Ruler) on GitHub. In conclusion the AR Ruler works pretty well. It is not perfect in some situations, such as in low lighting or when a surface is not entirely flat. Hence, the results wont be completely accurate all the time and since ARkit is still in its Beta Phase you're better off using a real ruler for now, to measure anything requiring high accuracy.
+In conclusion the AR Ruler works pretty well. It is not perfect in some situations, such as in low lighting or when a surface is not entirely flat. Hence, the results wont be completely accurate all the time and since ARkit is still in its Beta Phase you're better off using a real ruler for now, to measure anything requiring high accuracy.
