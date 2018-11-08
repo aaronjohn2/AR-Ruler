@@ -4,7 +4,7 @@ I made a precise virtual (AR) Ruler compared to the real one by implementing ARK
 This project relies on the built in sensors and A9 processor (Available through iPhone 6S and upwards.) The measurements are based on the plane detection's capabilities of ARKit. 
 
 <div class="imgcap">
-<img src="aaronjohn2/aaronjohn2.github.io/assets/bass/ARL1.PNG">
+<img src="ARL1.PNG">
 </div>
 
 
